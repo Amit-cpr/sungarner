@@ -1,3 +1,74 @@
+/* Main container full height */
+.bg-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video wrapper */
+.data-video {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* Background video styling */
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Overlay content stays above video */
+.image-home {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center; /* vertical center */
+}
+
+/* Optional: center content nicely */
+.data-hero-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+/* Parent container (video section) */
+.bg-container {
+    position: relative;
+}
+
+/* Center the button */
+.bg-container .button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Medium size */
+    padding: 12px 28px;
+    font-size: 16px;
+    border-radius: 30px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    /* Optional styling */
+    background-color: #9acd32;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
 .topbar {
             background-color: #1A2A36 !important;
             color: #ffffff;
